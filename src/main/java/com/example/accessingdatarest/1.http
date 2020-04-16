@@ -1,0 +1,27 @@
+# curl http://localhost:8080/people
+GET http://localhost:8000/people
+
+###
+
+# curl -X DELETE http://localhost:8080/people/1
+DELETE http://localhost:8000/people/2
+
+###
+
+# 用名字查找
+GET http://localhost:8000/people/search/findByLastName?name=sinan
+
+###
+
+# 查看所有可能的查询方法
+GET http://localhost:8000/people/search
+
+###
+
+POST http://localhost:8000/people
+Content-Type: application/json
+
+{
+  "firstName": "li",
+  "lastName": "sinan"
+}
